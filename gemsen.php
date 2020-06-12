@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Surabaya');
+date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[99m_________________\e[99m".date('[d-m-Y] [H:i:s]')."\e[99m________________\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -7,8 +7,8 @@ echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[99m      \e[99m  SCRIP UPDETE MASTER GeMseN \e[99m \n";
 echo "\e[92m  ==============================================\n";
 echo "\e[94m  =\e[97m 🤸  1. VOUCHER GOFOOD GemSeN  \e[92m=\n";
-echo "\e[94m  =\e[94m 🤸  2. VOUCHER GOFOOD 15K MINBEL 30K  \e[92m=\n";
-echo "\e[94m  =\e[97m 🤸  3. VOUCHER GOFOOD 10K MINBEL 30K   \e[92m=\n";
+echo "\e[94m  =\e[94m 🤸  2. VOUCHER GOFOOD Eatlah  \e[92m=\n";
+echo "\e[94m  =\e[97m 🤸  3. VOUCHER GOFOOD Guardian   \e[92m=\n";
 echo "\e[94m  =\e[94m 🤸  4. VOUCHER ONGKOS KIRIM 5K    \e[92m=\n";
 echo "\e[91m  ==============================================\n";
 echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -95,7 +95,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("blue",".");
         sleep(23);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("pink","🔓▶️ Message: ".$message);
@@ -103,13 +103,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
-        echo "\n".color("nevy","🔒▶️ Claim voucher A1");
+        echo "\n".color("nevy","🔒▶️ Claim voucher Eatlah");
         echo "\n".color("blue","⏳▶︄1�7 Sabar");
         for($a=1;$a<=3;$a++){
         echo color("blue",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420A"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("pink","🔓▶️ Message: ".$message);
@@ -117,13 +117,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("nevy","🔒▶️ Claim voucher B");
+        echo "\n".color("nevy","🔒▶️ Claim voucher Guardian");
         echo "\n".color("blue","⏳▶︄1�7 Sabar");
         for($a=1;$a<=3;$a++){
         echo color("blue",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420B"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GUARDIAN"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("pink","🔓▶️ Message: ".$message);
         echo "\n".color("nevy","🔒▶️ Claim voucher B1");
