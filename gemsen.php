@@ -12,12 +12,12 @@ echo "\e[94m  =\e[97m 🤸  3. VOUCHER GOFOOD GemSeN 3   \e[92m=\n";
 echo "\e[94m  =\e[94m 🤸  4. VOUCHER GOFOOD GemSeN 4   \e[92m=\n";
 echo "\e[91m  ==============================================\n";
 echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[99m Sudah Punya User Id (Y/N ?: ";	
+echo "\e[99m Sudah Punya User Id (Y/N): ";	
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "sudah")
 	goto login;
 login:
-echo "\e[93m▬▬▬▬▬tuliskan bacaan gemsen di bawah ini▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬tuliskan bacaan gemsen di bawah ini▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 $pass =  ( '╄1�7 User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
